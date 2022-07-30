@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.woff2") format("woff2"), url("../fonts/Montserrat-Italic-VariableFont_wght.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2"), url("../fonts/Montserrat-VariableFont_wght.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+body .wrapper .main {
+  margin: auto;
+  width: 1920px;
+  height: 1080px;
+  top: 50%;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  position: relative;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  overflow: hidden;
+}
+
+body .wrapper .main .main__bgCover .cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body .wrapper .main .bodyCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body .wrapper .main .bodyCard .headerCard {
+  margin: 64px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+body .wrapper .main .bodyCard .mainCard {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body .wrapper .main .bodyCard .mainCard .card__title {
+  position: absolute;
+  top: 342px;
+  left: 132px;
+}
+
+body .wrapper .main .bodyCard .mainCard .card__magaz {
+  position: absolute;
+  bottom: 62px;
+  right: 113px;
+}
+
+body .wrapper .main .bodyCard .mainCard .card__disn {
+  position: absolute;
+  bottom: 62px;
+  left: -460px;
+}
+
+body .wrapper .main .bodyCard .mainCard .card__timelaine {
+  position: absolute;
+  top: 395px;
+  left: -460px;
+}
