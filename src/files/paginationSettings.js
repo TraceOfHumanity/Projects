@@ -46,7 +46,7 @@ const list_items = [
   "Item 41",
   "Item 42",
   "Item 43",
-  
+
 ];
 
 const list_element = document.getElementById('list');
@@ -69,7 +69,7 @@ function generateCards() {
         </div>
         <div class="card__info">
           <div class="card__infoTop">
-            <p class="product__name">${cardData[i].title}</p>
+            <p id=${cardData[i].id} class="product__name">${cardData[i].title}</p>
             <p class="infoTop__subtitle">Assaut Gloss Black</p>
             <p class="product__size">20X10 - 22mm</p>
           </div>
@@ -85,10 +85,11 @@ function generateCards() {
       </div>
     `)
   }
+
   return cards
 }
 const cardArr = generateCards()
-results.innerHTML = cardArr.join('')
+list_element.innerHTML = cardArr.join('')
 // 
 function DisplayList(items, wrapper, rows_per_page, page) {
   wrapper.innerHTML = "";
@@ -138,8 +139,8 @@ function PaginationButton(page, items) {
   return button;
 }
 
-DisplayList(cardData, list_element, rows, current_page);
-SetupPagination(cardData, pagination_element, rows);
+DisplayList(cardArr.innerHTML, list_element, rows, current_page);
+SetupPagination(cardArr.innerHTML, pagination_element, rows);
 
 // DisplayList(cardArr, list_element, rows, current_page);
 // SetupPagination(cardArr, pagination_element, rows);
