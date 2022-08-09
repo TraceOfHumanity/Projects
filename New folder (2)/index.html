@@ -1,0 +1,2661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styleForRangeInput.css">
+  <link rel="stylesheet" href="css/iconsFont.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__container-logo">
+          <a href="#" class="logo _icon-logoCar"><span class="nameCompany">carmudflaps.com</span></a>
+        </div>
+      </div>
+      <div class="header__mainImg">
+        <!-- <picture><source srcset="img/mainImg.webp" type="image/webp"><img class="mainImg" src="img/mainImg.jpg" alt="Main image"></picture> -->
+      </div>
+      <div class="bg__headerMenu">
+        <div class="header__container">
+          <div class="header__body">
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="item"><a class="nav__link" href="#">SHOP</a></li>
+                <li class="item"><a class="nav__link" href="#">ADD MY TRUCK</a></li>
+                <li class="item"><a class="nav__link" href="#">SEARCH GALLERY</a></li>
+                <li class="item"><a class="nav__link" href="#">BRANDS</a></li>
+                <li class="item"><a class="nav__link" href="#">ABOUT</a></li>
+                <li class="item"><a class="nav__link" href="#">RESOURCES</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="crumbs">
+      <div class="container">
+        <a href="#" class="crumb">Home</a>
+        <a href="#" class="crumb">Brands</a>
+        <a href="#" class="crumb">Wheel Brands</a>
+        <a href="#" class="crumb">Fuel</a>
+      </div>
+    </div>
+    <main class="main">
+      <div class="main__container">
+        <!-- -----------------------------------сайтбар ліваруч----------------------- -->
+        <aside class="main__siteBar">
+          <form class="form__siteBar" action="#">
+            <!-- верхня частина сайтбару -->
+            <div class="categories__search">
+
+              <div class="form__group">
+                <div class="dropdown">
+                  <a class="dropdown__button" type="submit">Select Year</a>
+                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="2010">2010</li>
+                    <li class="dropdown__list-item" data-value="2012">2012</li>
+                    <li class="dropdown__list-item" data-value="2014">2014</li>
+                    <li class="dropdown__list-item" data-value="2016">2016</li>
+                    <li class="dropdown__list-item" data-value="2018">2018</li>
+                    <li class="dropdown__list-item" data-value="2020">2020</li>
+                    <li class="dropdown__list-item" data-value="2022">2022</li>
+                  </ul>
+                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown">
+                  <a class="dropdown__button" type="submit">Select Make</a>
+                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="2010">Belgium</li>
+                    <li class="dropdown__list-item" data-value="2012">Armenia</li>
+                    <li class="dropdown__list-item" data-value="2014">Australia</li>
+                  </ul>
+                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown">
+                  <a class="dropdown__button" type="submit">Select Model</a>
+                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="2010">Audi</li>
+                    <li class="dropdown__list-item" data-value="2012">BMW</li>
+                    <li class="dropdown__list-item" data-value="2014">Bentley</li>
+                    <li class="dropdown__list-item" data-value="2016">Cadillac</li>
+                  </ul>
+                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown">
+                  <a class="dropdown__button" type="submit">Select Trim</a>
+                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="2010">0</li>
+                    <li class="dropdown__list-item" data-value="2012">2</li>
+                    <li class="dropdown__list-item" data-value="2014">4</li>
+                    <li class="dropdown__list-item" data-value="2016">6</li>
+                    <li class="dropdown__list-item" data-value="2018">8</li>
+                    <li class="dropdown__list-item" data-value="2020">0</li>
+                    <li class="dropdown__list-item" data-value="2022">2</li>
+                  </ul>
+                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+                </div>
+              </div>
+
+              <div class="fitment">
+                <p class="fitment__text">FITMENT PREFERENCES</p>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown">
+                  <a class="dropdown__button" type="submit">Leveling kit</a>
+                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="2010">0</li>
+                    <li class="dropdown__list-item" data-value="2012">2</li>
+                    <li class="dropdown__list-item" data-value="2014">4</li>
+                    <li class="dropdown__list-item" data-value="2016">6</li>
+                    <li class="dropdown__list-item" data-value="2018">8</li>
+                    <li class="dropdown__list-item" data-value="2020">0</li>
+                    <li class="dropdown__list-item" data-value="2022">2</li>
+                  </ul>
+                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown">
+                  <a class="dropdown__button" type="submit">Minor Plastic Trimming</a>
+                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="2010">0</li>
+                    <li class="dropdown__list-item" data-value="2012">2</li>
+                    <li class="dropdown__list-item" data-value="2014">4</li>
+                    <li class="dropdown__list-item" data-value="2016">6</li>
+                    <li class="dropdown__list-item" data-value="2018">8</li>
+                    <li class="dropdown__list-item" data-value="2020">0</li>
+                    <li class="dropdown__list-item" data-value="2022">2</li>
+                  </ul>
+                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown">
+                  <a class="dropdown__button" type="submit">No rubbing or scrubbing</a>
+                  <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__list-item" data-value="2010">0</li>
+                    <li class="dropdown__list-item" data-value="2012">2</li>biGr
+                    <li class="dropdown__list-item" data-value="2014">4</li>
+                    <li class="dropdown__list-item" data-value="2016">6</li>
+                    <li class="dropdown__list-item" data-value="2018">8</li>
+                    <li class="dropdown__list-item" data-value="2020">0</li>
+                    <li class="dropdown__list-item" data-value="2022">2</li>
+                  </ul>
+                  <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+                </div>
+              </div>
+
+            </div>
+            <!-- /верхня частина сайтбару -->
+
+            <!-- нижня частина сайтбару з чекбоксами та пошуком -->
+            <div class="active__filters">
+              <div class="active__filters-top">
+                <p class="active__filters-topTitle">Active Filtrs</p>
+                <button class="button__clear _icon-clear">Clear</button>
+              </div>
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL DIAMETER</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+
+              <div class="form__group">
+                <div class="dropdown dropdown2">
+                  <a class="dropdown__button dropdown__button2" type="submit">WHEEL WIDTH</a>
+                  <img class="dropdown__arrow dropdown__arrow2" src="img/Group (6).svg" alt="">
+                  <ul class="dropdown__list dropdown__list2">
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2010">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">15"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2012">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">16"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2014">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">17"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2016">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">18"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2018">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">20"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2020">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">22"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">24"</p>
+                    </li>
+                    <li class="dropdown__list-item dropdown__list-item2" data-value="2022">
+                      <input class="checkbox" type="checkbox">
+                      <p class="checkbox__item">26"</p>
+                    </li>
+                  </ul>
+                  <input class="dropdown__input-hidden dropdown__input-hidden2" type="text" name="select-category"
+                    value="">
+                </div>
+              </div>
+              <!-- ================== -->
+              <p class="searchByKeyword">
+                Search by Keyword
+              </p>
+              <!-- пошук -->
+              <label class="input">
+                <input class="inputIn" placeholder="Search...." type="text">
+                <button class="button__search _icon-search" type="submit"></button>
+              </label>
+              <!-- /пошук -->
+            </div>
+            <!-- нижня частина сайтбару з чекбоксами та пошуком -->
+          </form>
+        </aside>
+        <!-- /сайтбар ліваруч -->
+
+        <!-- основний контент(кількість товарів, сортування, товар, перехід по сторінкам і додаткова їнформація знизу) -->
+
+        <div class="main__content">
+
+          <div class="main__contentTop">
+            <p class="results"><span class="amouth">1668 </span>Results</p>
+
+
+            <div class="form__group">
+              <div class="dropdown dropdownSort">
+                <a class="dropdown__button" type="submit">Sort By</a>
+                <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                <ul class="dropdown__list">
+                  <li class="dropdown__list-item" data-value="2010">price up</li>
+                  <li class="dropdown__list-item" data-value="2012">prise down</li>
+                </ul>
+                <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="main__contentBasic">
+
+            <div class="form__group">
+              <div class="dropdown dropdownSort">
+                <a class="dropdown__button filtersAside" type="submit">Filters</a>
+                <img class="dropdown__arrow" src="img/Group (6).svg" alt="">
+                <ul class="dropdown__list">
+                  <li class="dropdown__list-item" data-value="2010"></li>
+                  <li class="dropdown__list-item" data-value="2012"></li>
+                </ul>
+                <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+              </div>
+            </div>
+
+            <div class="main__pagenation">
+              <!-- -----------------------------------------блок з картками----------------------------------- -->
+              <div class="card-content" style="display: none">
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__img">
+                    <img class="image__card" src="img/wheel 1.jpg" alt="">
+                  </div>
+                  <div class="card__info">
+                    <div class="card__infoTop">
+                      <p class="product__name">FUEL</p>
+                      <p class="infoTop__subtitle">Assaut Gloss Black</p>
+                      <p class="product__size">20X10 - 22mm</p>
+                    </div>
+                    <div class="card__price">
+                      <p class="costs"><span class="">$</span> 1828</p>
+                      <p class="setFour">Set of four</p>
+                    </div>
+                    <div class="more__info">
+                      <p class="package _icon-dollar">Save up to $108 when adding tires of package</p>
+                      <P class="delivery _icon-box">In stock & free quick delivery: THU, AUG 4</P>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /блок з картками -->
+
+            </div>
+            <div class="pagination">
+              <span class="next20">Show next 20</span>
+            </div>
+
+          </div>
+          <!-- додаткова інформація під головним контентом -->
+          <div class="additionally">
+            <div class="additionally__info">
+              <h2 class="title__bottomArticle">
+                About Fuel Wheels
+              </h2>
+              <p class="text__bottomArticle">
+                Founded in 2009, Fuel Wheels are synonymous with peak performance. Their cutting edge designs, advanced
+                technology, and perfect fitment that all its wheels add to your truck and its performance. Fuel's bread
+                and butter is its ability to create high-quality wheels for many different truck models and trims, and
+                that's on full display throughout its lineup.
+              </p>
+            </div>
+            <div class="additionally__info">
+              <h2 class="title__bottomArticle">
+                What Kind of Wheels Does Fuel Wheels Make?
+              </h2>
+              <p class="text__bottomArticle">
+                Fuel Wheels has grown to become one of the most trusted names for off-road enthusiasts. They also offer
+                more than a few design options to choose from for your build. 1 piece, 2 piece and Forged wheels are all
+                readily available on the Fuel lineup, coming in diameters ranging from 20 to 30 inches. Having this many
+                options ensures you'll find the perfect wheel to fit your truck and give you the look you're after.
+
+              </p>
+            </div>
+            <div class="additionally__info">
+              <h2 class="title__bottomArticle">
+                Are Fuel Wheels Any Good?
+              </h2>
+              <p class="text__bottomArticle">
+                Fuel wheels are some of the best in the business, especially when you're looking for an uptick in
+                performance and handling on dirt trails or for mudding. This, combined with the aggressive yet sleek
+                appearances that Fuel wheels boast, makes them a worthy choice if you subscribe to a more intrepid way
+                of life. Additionally, their high quality construction makes them an amazing option for daily driving as
+                well.
+
+              </p>
+            </div>
+            <div class="additionally__info">
+              <h2 class="title__bottomArticle">
+                Where Can I Buy Fuel Wheels?
+              </h2>
+              <p class="text__bottomArticle">
+                You're in luck if you've got your eye on a new set of Fuel wheels, as they're available today in our
+                inventory. Shop online for Fuel wheels and rims today at Custom Offsets. When you package wheels and
+                tires together, we'll handle the mounting and balancing for free. Also, guaranteed quick delivery and
+                financing are available to all qualified customers!
+              </p>
+            </div>
+          </div>
+          <div class="content content__hidden" id="content">
+            <div class="additionally__info">
+              <h2 class="title__bottomArticle">
+                About Fuel Wheels
+              </h2>
+              <p class="text__bottomArticle">
+                Founded in 2009, Fuel Wheels are synonymous with peak performance. Their cutting edge designs, advanced
+                technology, and perfect fitment that all its wheels add to your truck and its performance. Fuel's bread
+                and butter is its ability to create high-quality wheels for many different truck models and trims, and
+                that's on full display throughout its lineup.
+              </p>
+            </div>
+            <div class="additionally__info">
+              <h2 class="title__bottomArticle">
+                What Kind of Wheels Does Fuel Wheels Make?
+              </h2>
+              <p class="text__bottomArticle">
+                Fuel Wheels has grown to become one of the most trusted names for off-road enthusiasts. They also offer
+                more than a few design options to choose from for your build. 1 piece, 2 piece and Forged wheels are all
+                readily available on the Fuel lineup, coming in diameters ranging from 20 to 30 inches. Having this many
+                options ensures you'll find the perfect wheel to fit your truck and give you the look you're after.
+
+              </p>
+            </div>
+            <div class="additionally__info">
+              <h2 class="title__bottomArticle">
+                Are Fuel Wheels Any Good?
+              </h2>
+              <p class="text__bottomArticle">
+                Fuel wheels are some of the best in the business, especially when you're looking for an uptick in
+                performance and handling on dirt trails or for mudding. This, combined with the aggressive yet sleek
+                appearances that Fuel wheels boast, makes them a worthy choice if you subscribe to a more intrepid way
+                of life. Additionally, their high quality construction makes them an amazing option for daily driving as
+                well.
+
+              </p>
+            </div>
+            <div class="additionally__info">
+              <h2 class="title__bottomArticle">
+                Where Can I Buy Fuel Wheels?
+              </h2>
+              <p class="text__bottomArticle">
+                You're in luck if you've got your eye on a new set of Fuel wheels, as they're available today in our
+                inventory. Shop online for Fuel wheels and rims today at Custom Offsets. When you package wheels and
+                tires together, we'll handle the mounting and balancing for free. Also, guaranteed quick delivery and
+                financing are available to all qualified customers!
+              </p>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- /додаткова інформація під головним контентом -->
+      </div>
+    </main>
+    <!-- /основний контент(кількість товарів, сортування, товар, перехід по сторінкам і додаткова їнформація знизу) -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__column">
+          <p class="tirec">Tires</p>
+          <p class="allRights">All Rights Reserved</p>
+        </div>
+        <div class="footer__column more">
+          <p class="more__word" id="button">More</p>
+          <p class="_icon-arrow"></p>
+        </div>
+        <div class="footer__column">
+          <div class="footer__links">
+            <a class="soc _icon-facebook-f" href="#"></a>
+            <a class="soc _icon-twitter" href="#"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/burgerMenu.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/paginationSettings.js"></script>
+  <script src="js/pagination.js" type="text/javascript"></script>
+  <script src="js/scriptForInputRange.js"></script>
+  <!-- <script src="js/app.min.js"></script> -->
+  <script src="js/filtersAndSearch.js"></script>
+  </div>
+</body>
+
+</html>
